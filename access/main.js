@@ -228,8 +228,8 @@ const app = {
         const min_left = Math.floor(audio.currentTime / 60);;
         const sec_left = Math.floor(((timeCurrentSong / 60) - Math.floor(timeCurrentSong / 60)) * 60);
         progress.classList.add('.smooth');
-        $('.end-time').textContent = `${min_right}:${sec_right}`;
-        $('.start-time').textContent =`0${min_left}:${sec_left < 10 ? '0' : ''}${sec_left}`
+        $('.end-time').textContent = `${min_right}:${sec_right < 10 ? '0' : ''}${sec_right}`;
+        $('.start-time').textContent =`${min_left < 10 ? '0' : ''}${min_left}:${sec_left < 10 ? '0' : ''}${sec_left}`
     },
     activeSong: function() {
         const songArray = $$('.song');

@@ -79,7 +79,7 @@ namespace BTL
         //Load, Enter Event
         private void loadAndEnterAnimateChange(BunifuTextBox thisBox,BunifuIconButton thisBtn,Label thisLabel, string imgName, string thisColor, int lcX, int lcY, int fontSize, string labelColor)
         {
-            thisBtn.Image = new System.Drawing.Bitmap($@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\{imgName}.png");
+            thisBtn.Image = new System.Drawing.Bitmap($@"..\..\Image\{imgName}.png");
             thisBtn.BackgroundColor = ColorTranslator.FromHtml($"#{thisColor}");
             thisBtn.BorderColor = ColorTranslator.FromHtml($"#{thisColor}");
             thisLabel.BackColor = ColorTranslator.FromHtml($"#{thisColor}");
@@ -91,7 +91,7 @@ namespace BTL
         //Leave Event
         private void leaveAnimateChangeloadAnimateChange(BunifuUserControl thisUserControl ,BunifuLabel thisErrorMessage , BunifuTextBox thisBox, BunifuIconButton thisBtn, Label thisLabel, string imgName, string hideImg, string thisColor, int lcX, int lcY, int fontSize, bool isClick)
         {
-            thisBtn.Image = new System.Drawing.Bitmap($@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\{imgName}.png");
+            thisBtn.Image = new System.Drawing.Bitmap($@"..\..\Image\{imgName}.png");
             thisBtn.BackgroundColor = ColorTranslator.FromHtml($"#{thisColor}");
             thisBtn.BorderColor = ColorTranslator.FromHtml($"#{thisColor}");
             if (thisBox.Text == "")
@@ -105,7 +105,7 @@ namespace BTL
             }
             else
             {
-                thisLabel.Image = new System.Drawing.Bitmap($@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\{hideImg}.png");
+                thisLabel.Image = new System.Drawing.Bitmap($@"..\..\Image\{hideImg}.png");
             }
             if(isClick == true)
             {
@@ -144,12 +144,12 @@ namespace BTL
         private void bunifuTextBox5_TextChange(object sender, EventArgs e) { showErrorMessage(isLoginClick, ListLoginBoxs[0], ListLoginEmptyErrorMessage[0]); }
         private void bunifuTextBox6_TextChange(object sender, EventArgs e) { showErrorMessage(isLoginClick, ListLoginBoxs[1], ListLoginEmptyErrorMessage[1]); }
         //Sự kiện đổi màu khi hover vào các Social Icon
-        private void bunifuIconButton6_MouseHover(object sender, EventArgs e) { ListSocialIcon[0].Image = new System.Drawing.Bitmap(@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\facebook-hover.png"); }
-        private void bunifuIconButton6_MouseLeave(object sender, EventArgs e) { ListSocialIcon[0].Image = new System.Drawing.Bitmap(@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\facebook.png"); }
-        private void bunifuIconButton7_MouseHover(object sender, EventArgs e) { ListSocialIcon[01].Image = new System.Drawing.Bitmap(@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\instagram-hover.png"); }
-        private void bunifuIconButton7_MouseLeave(object sender, EventArgs e) { ListSocialIcon[1].Image = new System.Drawing.Bitmap(@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\instagram.png"); }
-        private void bunifuIconButton8_MouseHover(object sender, EventArgs e) { ListSocialIcon[2].Image = new System.Drawing.Bitmap(@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\skype-hover.png"); }
-        private void bunifuIconButton8_MouseLeave(object sender, EventArgs e) { ListSocialIcon[2].Image = new System.Drawing.Bitmap(@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\skype.png"); }
+        private void bunifuIconButton6_MouseHover(object sender, EventArgs e) { ListSocialIcon[0].Image = new System.Drawing.Bitmap(@"..\..\Image\facebook-hover.png"); }
+        private void bunifuIconButton6_MouseLeave(object sender, EventArgs e) { ListSocialIcon[0].Image = new System.Drawing.Bitmap(@"..\..\Image\facebook.png"); }
+        private void bunifuIconButton7_MouseHover(object sender, EventArgs e) { ListSocialIcon[01].Image = new System.Drawing.Bitmap(@"..\..\Image\instagram-hover.png"); }
+        private void bunifuIconButton7_MouseLeave(object sender, EventArgs e) { ListSocialIcon[1].Image = new System.Drawing.Bitmap(@"..\..\Image\instagram.png"); }
+        private void bunifuIconButton8_MouseHover(object sender, EventArgs e) { ListSocialIcon[2].Image = new System.Drawing.Bitmap(@"..\..\Image\skype-hover.png"); }
+        private void bunifuIconButton8_MouseLeave(object sender, EventArgs e) { ListSocialIcon[2].Image = new System.Drawing.Bitmap(@"..\..\Image\skype.png"); }
         //Sự kiện Click
         private void bunifuUserControl2_Click(object sender, EventArgs e) { ListRegisterBoxs[1].Focus(); ListRegisterUserControls[1].Visible = false; }
         private void bunifuUserControl3_Click(object sender, EventArgs e) { ListRegisterBoxs[2].Focus(); ListRegisterUserControls[2].Visible = false; }
@@ -176,10 +176,10 @@ namespace BTL
         private void menuIcon_Click(object sender, EventArgs e)
         {
             temp++;
-            bunifuPictureBox1.Image = new System.Drawing.Bitmap($@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\Bg2.png");
+            bunifuPictureBox1.Image = new System.Drawing.Bitmap($@"..\..\Image\Bg2.png");
             if(temp == 2)
             {
-                bunifuPictureBox1.Image = new System.Drawing.Bitmap($@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\Bg1.png");
+                bunifuPictureBox1.Image = new System.Drawing.Bitmap($@"..\..\Image\Bg1.png");
                 temp = 0;
             }
             
@@ -209,13 +209,13 @@ namespace BTL
         {
             if (thisBox.UseSystemPasswordChar == true)
             {
-                thisBnfLabel.BackgroundImage = new System.Drawing.Bitmap(@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\NoEyes-Fill.png");
+                thisBnfLabel.BackgroundImage = new System.Drawing.Bitmap(@"..\..\Image\NoEyes-Fill.png");
                 thisBox.UseSystemPasswordChar = false;
                 thisBox.PasswordChar = default;
             }
             else if (thisBox.UseSystemPasswordChar == false)
             {
-                thisBnfLabel.BackgroundImage = new System.Drawing.Bitmap(@"C:\Users\daovi\source\repos\BTL\Img\Iconly\Bold\Eyes-Fill.png");
+                thisBnfLabel.BackgroundImage = new System.Drawing.Bitmap(@"..\..\Image\Eyes-Fill.png");
                 thisBox.UseSystemPasswordChar = true;
                 thisBox.PasswordChar = '●';
             }
@@ -247,15 +247,22 @@ namespace BTL
          thông báo lỗi, nếu đúng thông tin và TextBox không trống thì sẽ đăng nhập thành công*/
         private void Validate(List<BunifuTextBox> thisListBox, List<BunifuUserControl> thisUserControl, List<BunifuLabel> thisErrorMessage, int start, int end, string style)
         {
+            int count = 0;
             for(int i = start; i < end; i++)
             {
                 if(thisListBox[i].Text == "")
                 {
                     thisUserControl[i].Visible = true;
                     thisErrorMessage[i].Visible = true;
-                } else if(thisListBox[i].Text != "" && style == "login")
+                }
+                if(thisListBox[i].Text != "" && style == "login")
+                {
+                    count++;
+                }
+                if(count == 2)
                 {
                     checkUserInfo(userName, userPassword);
+                    count = 0;
                 }
             }
         }
@@ -264,7 +271,7 @@ namespace BTL
         {
             if (ListLoginBoxs[0].Text == userName && ListLoginBoxs[1].Text == userPassword)
             {
-                mainForm.Show();
+                mainForm.ShowDialog();
                 ListLoginEmptyErrorMessage[0].Text = "Tài khoản không thể để trống";
                 ListLoginEmptyErrorMessage[1].Text = "Mật khẩu không thể để trống";
             }

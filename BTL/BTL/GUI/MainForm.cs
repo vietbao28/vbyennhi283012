@@ -16,5 +16,9 @@ namespace BTL.GUI
         {
             InitializeComponent();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

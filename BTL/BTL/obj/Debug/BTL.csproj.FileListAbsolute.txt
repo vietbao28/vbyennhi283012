@@ -77,3 +77,4 @@ C:\Users\daovi\source\repos\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
 C:\Users\daovi\source\repos\BTL\BTL\obj\Debug\BTL.exe
 C:\Users\daovi\source\repos\BTL\BTL\obj\Debug\BTL.pdb
 C:\Users\daovi\source\repos\BTL\BTL\obj\Debug\BTL.LoginAndSignUp.resources
+C:\Users\daovi\source\repos\BTL\BTL\obj\Debug\BTL.GUI.MainForm.resources

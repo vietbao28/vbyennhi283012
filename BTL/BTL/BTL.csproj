@@ -165,6 +165,9 @@
     <EmbeddedResource Include="GUI\LoginAndSignUp.resx">
       <DependentUpon>LoginAndSignUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -192,6 +195,32 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Eyes-FillNoColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\Bg1.png" />
+    <Content Include="Image\Bg2.png" />
+    <Content Include="Image\Eyes-Fill.png" />
+    <Content Include="Image\Eyes-FillNoColor.png" />
+    <Content Include="Image\facebook-hover.png" />
+    <Content Include="Image\facebook.png" />
+    <Content Include="Image\instagram-hover.png" />
+    <Content Include="Image\instagram.png" />
+    <Content Include="Image\Line 2.png" />
+    <Content Include="Image\Lock-Fill.png" />
+    <Content Include="Image\Lock-FillNoColor.png" />
+    <Content Include="Image\Menu.png" />
+    <Content Include="Image\menu2.png" />
+    <Content Include="Image\menu3.png" />
+    <Content Include="Image\NoEyes-Fill.png" />
+    <Content Include="Image\NoEyes-FillNoColor.png" />
+    <Content Include="Image\Profile.png" />
+    <Content Include="Image\ProfileDS.png" />
+    <Content Include="Image\skype-hover.png" />
+    <Content Include="Image\skype.png" />
+    <Content Include="Image\Solid.png" />
+    <Content Include="Image\SolidDS.png" />
+    <Content Include="Image\Vector.png" />
+    <Content Include="Image\Vector3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
